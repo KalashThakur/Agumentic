@@ -1,0 +1,35 @@
+.container > div{
+   /* border: 2px solid black; */
+   width: 70%;
+   margin: auto;
+   margin-bottom: 2rem;
+}
+
+button{
+   cursor: pointer;
+}
+
+.button{
+   cursor: pointer;
+   background-color: #000;
+   color: #fff;
+   font-weight: 600;
+   padding: 8px;
+   width: 70%;
+   text-align: center;
+   border: none;
+}
+
+h1{
+}
+
+h1, p{
+   text-align: left;
+   /* border: 2px solid black; */
+   padding-left: 2rem;
+}
+
+p{
+   font-size: 20px;
+   color: rgb(61, 56, 56);
+}

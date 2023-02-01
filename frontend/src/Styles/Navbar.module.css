@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f0f0;
+    padding: 20px;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+a{
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
