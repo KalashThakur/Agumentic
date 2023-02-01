@@ -37,4 +37,4 @@ userController.patch("/:note_id", async(req, res) => {
         res.send(result)
 });
 
-module.exports = notesController
+module.exports = userController
