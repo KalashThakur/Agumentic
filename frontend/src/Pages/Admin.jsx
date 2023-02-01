@@ -16,7 +16,7 @@ export const Admin = () => {
         e.preventDefault()
             let payload = {image, content}
 
-            axios.post("http://localhost:8080/user/create", payload)
+            axios.post("https://agumentic.onrender.com/user/create", payload)
         .then((res) => {
             console.log("res", res)
             navigate("/")

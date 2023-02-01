@@ -9,7 +9,7 @@ export const Home = () => {
   }, [])
 
   let getData = async () => {
-    let res = await fetch('http://localhost:8080/user');
+    let res = await fetch('https://agumentic.onrender.com/user');
     let data = await res.json();
     console.log('data:', data)
     setUserData(data)
@@ -34,15 +34,6 @@ export const Home = () => {
           <div>
             {" "}
             <p>{item.content}</p>
-          </div>
-
-          <div>
-            {/* <button
-              className={style.button}
-              onClick={() => handlDelete(item)}
-            >
-              Delete
-            </button>{" "} */}
           </div>
           
       </div>
