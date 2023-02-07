@@ -9,9 +9,18 @@ export const Navbar = () => {
     <div className={style.navbar}>
       <div className={style.heading}>dribble</div>
       <div className={style.navContainer}>
-        <Link to={'/'}>HomePage</Link>
-        <Link to={'/admin'}>Admin </Link>
+        <div>
+        <Link to={'/'}>HomePage</Link> </div>
+        <div> <Link to={'/admin'}>Admin </Link> </div>
+
+        {/* <button className={style.btn1}> <Link to={'/'}>Sign in</Link> </button>
+        <button className={style.btn2}> <Link to={'/admin'}>Sign up </Link> </button> */}
       </div>
+
+      {/* <div className={style.navContainer}>
+      <Link to={'/'}>HomePage</Link>
+        <Link to={'/admin'}>Admin </Link>
+      </div> */}
     </div>
   )
 }

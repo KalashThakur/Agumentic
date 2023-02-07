@@ -25,16 +25,31 @@ userController.get("/", async(req, res) => {
 
 
 //PATCH
-userController.patch("/:note_id", async(req, res) => {
-    const {note_id} = req.params;
+userController.patch("/:user_id", async(req, res) => {
+    const {user_id} = req.params;
     const payload = req.body;
    
-    const newNote = await UserModel.findOneAndUpdate({_id: note_id}, req.body)
+    const newNote = await UserModel.findOneAndUpdate({_id: user_id}, req.body)
     await newNote.save()
 
     const result = await UserModel.find()
         // console.log('result:', result)
         res.send(result)
+});
+
+//DELETE
+userController.delete("/:user_id", async(req, res) => {
+    const {user_id} = req.params;
+
+   const data = await UserModel.findOne({_id: user_id})
+   
+   if(data){
+    const deletedData = await UserModel.findOneAndDelete({_id: user_id})
+    return res.send({"message": "deletedData data"})
+   }
+  
+
+   
 });
 
 module.exports = userController

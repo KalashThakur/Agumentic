@@ -3,6 +3,7 @@
    width: 70%;
    margin: auto;
    margin-bottom: 2rem;
+   padding-top: 2rem;
 }
 
 button{
@@ -20,9 +21,6 @@ button{
    border: none;
 }
 
-h1{
-}
-
 h1, p{
    text-align: left;
    /* border: 2px solid black; */
@@ -32,4 +30,65 @@ h1, p{
 p{
    font-size: 20px;
    color: rgb(61, 56, 56);
+}
+img{
+   height: 600px;
+   width: 800px;
+   border-radius: 10px;
+}
+
+h2{
+   font-family: cursive;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    /* margin-bottom: 0; */
+}
+
+.container2{
+   /* border: 2px solid black; */
+   margin-top: 2rem;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   margin-bottom: 3rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   border-radius: 10px;
+}
+
+.topContainer{
+   display: flex;
+   /* border: 2px solid blue; */
+   justify-content: space-around;
+}
+
+.topContainer > div{
+   text-align: right;
+   padding: 3px;
+}
+
+.buttons{
+   display: flex;
+
+}
+
+.buttons > div:first-child{
+   margin-right: 10px;
+}
+
+.buttons > div{
+   cursor: pointer;
+   background-color: #ea4c89;
+   color: #fff;
+   font-weight: 700;
+   padding: 3px;
+   width: 4rem;
+   text-align: center;
+   height: 28px;
+   border-radius: 4px;
+}
+
+.contentDiv{
+   /* border: 2px solid black; */
+   width: 80%;
+   margin: auto;
 }

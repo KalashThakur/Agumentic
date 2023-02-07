@@ -3,6 +3,7 @@
     justify-content: space-around;
     background-color: #f1f0f0;
     padding: 20px;
+    margin-bottom: 2rem;
 }
 
 .navContainer{
@@ -21,4 +22,26 @@ a{
     text-decoration: none;
     color: #000;
     font-weight: 500;
+}
+
+.btn1{
+    margin-right: 2rem;
+    color: grey;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+.btn2{
+    font-size: 16px;
+    border: none;
+
+    color: white;
+    background-color: #ea4c89;
+   font-weight: 700;
+   /* padding: 3px; */
+   /* width: 4rem; */
+   text-align: center;
+   height: 28px;
+   border-radius: 4px;
 }
